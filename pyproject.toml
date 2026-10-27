@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foxcrunk-samplepower"
+version = "0.1.0"
+description = "按效应量与显著性要求反推所需样本量，标出当前样本是否够用"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "foxcrunk" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://foxcrunk.github.io"
+Repository = "https://github.com/foxcrunk/samplepower"
+Issues = "https://github.com/foxcrunk/samplepower/issues"
+
+[project.scripts]
+samplepower = "samplepower:main"
+
+[tool.setuptools]
+py-modules = ["samplepower"]
